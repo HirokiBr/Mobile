@@ -1,0 +1,37 @@
+.container{
+    text-align: center;
+    width: 80%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    margin-top: auto;
+   font-size: 40px;
+   border: 1px solid black;
+   background-attachment: fixed;
+   background-color: rgb(4, 138, 138);
+}
+
+body{
+    background-color:aqua;
+    width: 100vw;
+    
+    align-items: center;
+    
+}
+.titulo{
+    Font-size: 49px;
+}
+button:hover{
+    background-color:rgb(1, 252, 189) ;
+    transition: .3s all;
+    text-decoration: none;
+}
+button{
+ text-align: center;
+ color:blue;
+ font-size: 20px;
+ background-color:aquamarine
+}
