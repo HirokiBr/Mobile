@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição</title>
+    <link rel="stylesheet" href="mamaco.css">
+    <script>
+        var nome;
+        var email;
+        var num = 0;
+
+        function escrever(quadro) {
+            var info = "Usuário número " + (++num) + "\n";
+            info += "Nome: " + nome + "\n";
+            info += "E-mail: " + email + "\n\n";
+            quadro.value += info;
+        }
+
+        function setNome() {
+            nome = prompt('Seu Nome', '');
+        }
+
+        function setEmail() {
+            email = prompt('Email', '');
+        }
+    </script>
+</head>
+<body bgcolor="white">
+    <form>
+        <h2 align="center">Cadastro</h2>
+        <div align="center">
+            <p>
+                <input type="button" value="Digitar Nome" onclick="setNome()">
+                <input type="button" value="Digitar E-mail" onclick="setEmail()">
+                <input type="button" value="Cadastrar" onclick="escrever(this.form.Area)">
+            </p>
+            <p><textarea rows="15" cols="40" name="Area"></textarea></p>
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+</body>
+</html>
